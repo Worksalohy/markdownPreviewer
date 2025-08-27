@@ -1,0 +1,104 @@
+$widthOne: 500px;
+$widthTwo: 800px;
+
+@mixin background-col {
+    background-color: rgb(216, 213, 186);
+}
+
+@mixin for-head {
+    display: flex;
+    align-items: center;
+    background-color: rgba(68, 67, 67, 0.788);
+    font-size: 1.3em;
+    color: rgb(50, 187, 197);
+    font-weight: 600;
+    height: 40px;
+    border: 1px solid rgb(218, 171, 20);
+    border-radius: 6px 6px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 1px 3px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-color: rgba(71, 82, 56, 0.788);
+}
+
+.editor-head {
+    @include for-head;
+    width: $widthOne;
+}
+
+#editor {
+    background-color: rgba(185, 211, 185, 0.788);
+    width: $widthOne;
+    height: 200px;
+    box-shadow: 1px 3px 5px 3px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(218, 171, 20);
+    color: rgb(7, 6, 6);
+    padding: 10px 10px 0px 10px;
+}
+
+.previewer-head {
+    @include for-head;
+    width: $widthTwo;
+    margin-top: 20px;
+}
+
+#preview {
+    background-color: rgba(185, 211, 185, 0.788);
+    width: $widthTwo;
+    height: auto;
+    min-height: 300px;
+    border: 1px solid rgb(218, 171, 20);
+    padding: 10px 10px 0px 10px;
+    box-shadow: 1px 3px 5px 3px rgba(0, 0, 0, 0.4);
+    color: rgb(7, 6, 6);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin: 10px 0px 10px 0px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+code {
+    @include background-col;
+    padding: 5px;
+    height: auto;
+    font-weight: 600;
+}
+
+pre {
+    @include background-col;
+    width: 100%;
+    padding: 10px;
+}
+
+blockquote {
+    margin-left: 15px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
