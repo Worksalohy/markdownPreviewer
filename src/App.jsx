@@ -28,7 +28,7 @@ const ChangeText = ({ content }) => {
 
 {/* Main component */}
 function App() {
-  const [inputValue, setInputValue] = useState("")
+  const [inputValue, setInputValue] = useState("# Edit your article or tuto here and use (#, *, ||, `` or _ and more) to adjust the layout.")
 
   const handleChange = (e) => {
       setInputValue(e.target.value)
