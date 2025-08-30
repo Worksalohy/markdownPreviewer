@@ -3,7 +3,7 @@
 ## How to use the markdown previewer?
     If you are a developer; you need the markdown previewer to make your blog writing easier.
 
-## Ruler
+## Usage Ruler
     # = <h1></h1>
     ## = <h2></h2>
     ### = <h3></h3> 
@@ -14,11 +14,11 @@
     ```
         <code>block of code</code>
     ```
-**bold** 
-*italic* or _italic_ 
-**_both!_**
-~~crossing stuff out~~.
-[links](https://www.your.URL)
-> Block Quotes!
+    **bold** 
+    *italic* or _italic_ 
+    **_both!_**
+    ~~crossing stuff out~~.
+    [links](https://www.your.URL)
+    > Block Quotes!
 
 ...
